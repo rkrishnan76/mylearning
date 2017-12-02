@@ -22,8 +22,6 @@ public class HourGlassProblem {
                     arr[i][j] = h++;
                 }
             }
-            
-                h=0;
                     for (int i = 0; i < 4; i++) {
                         for (int j = 0; j < 4; j++) {
                               int tempSum = arr[i][j] + arr[i][j+1] + arr[i][j+2]
@@ -31,7 +29,7 @@ public class HourGlassProblem {
                                     + arr[i+2][j+2];
                             if(maxSum<tempSum)
                                 maxSum=tempSum;
-                            h++;
+
                         }
                     }
             System.out.println(maxSum);
